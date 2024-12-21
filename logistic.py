@@ -5,7 +5,7 @@ import numpy as np
 
 def main():
     # Load the model
-    model = joblib.load('Logistic.pkl')
+    model = joblib.load('logistic.pkl')
  
     # Define feature names
     feature_names = ["LDH", "ALP", "Neutrophils", "DBIL", "ALB", "Fg"]
