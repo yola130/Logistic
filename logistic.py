@@ -37,6 +37,7 @@ def main():
 
     if st.button("Predict"):
         # Predict probabilities
+        res = model.predict_proba(features)
         predicted_proba = model.predict_proba(features)[0]
 
         # 根据预测概率的最高值来确定预测类别（但这里我们直接根据概率阈值判断)
